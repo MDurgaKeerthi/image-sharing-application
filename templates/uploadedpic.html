@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<link rel="stylesheet" href = "{{ url_for('static',filename='css/menu.css')}}">
+<title>Hello</title>
+</head>
+
+<body>
+   <ul>
+         <li><a href="/upload">upload picture</a></li>
+         <li><a href="/showpics/">Your pictures</a></li>   
+         <li><a href="" class = "active">All uploaded pictures</a></li>
+         <li><a href="/">logout</a></li>
+   </ul>
+   <div  align="center">
+      <h3>News feed</h3> 
+      <div style="background-color:#f1f1f1; position:relative; top:15%; left:13.5%; width:67%; margin:0 auto; border:0.5px solid black; padding:2%;">
+durga uploaded this picture<br>
+<img src="../uploads/durga-0.png" align="center" style="width:100%;height:80%;">
+<br><br>
+ <form action = "comment" method = "POST"> 
+ <input type = "hidden" name = "comntpic" value="durga-0.png"/> 
+<input type = "text" name = "comnt"/><br> 
+ <input type = "submit" value="comment" />
+ </form>
+<p><u>previous comments:</u></p>--> commented by durga as: sjdhsj<br><hr></div></body></html>

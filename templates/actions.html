@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href = "{{ url_for('static',filename='css/menu.css')}}">
+</head>
+   <body>
+      <ul >
+         <li><a href="#uploadform" class = "active">upload picture</a></li>
+         <li><a href="/showpics/">Your pictures</a></li>   
+         <li><a href="/uploadedpics/">All uploaded pictures</a></li>
+         <li><a href="/">logout</a></li>
+      </ul>
+      <div id="uploadform" style="position:fixed; top:10%; left:35%; width:50%; margin:0 auto; padding:7.5px;" align="center">
+      <h3>You can upload you pictures here</h3> 
+      <div style="background-color:#f1f1f1;  position:fixed; top:35%; left:35%; width:50%; margin:0 auto; border:0.5px solid black; padding:20px;">
+         <form action = "upload" method = "POST" 
+               enctype = "multipart/form-data">
+               <input type = "file" name = "file" />
+               <input type = "submit"/>
+            </form>
+      </div>      
+      </div> 
+   </body>
+</html>

@@ -1,0 +1,24 @@
+.head{
+   background-color: lightgrey;
+   width: 100em;
+   height: 3.5em;
+   border: 1px solid black;
+   }
+   
+.foot{
+   background-color: lightgrey;
+   top:96.5em;
+   width: 100em;
+   height: 3.5em;
+   border: 1px solid black;
+   }   
+   
+.box{
+   
+   top : 30em;
+   left: 10em;
+   width: 20em;
+   height: 20em;
+   background-color: lightblue;
+   border: 1px solid blue;
+}   
